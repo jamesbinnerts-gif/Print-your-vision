@@ -1,0 +1,93 @@
+/* Algemene styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #ff8800;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* Producten container (2 naast elkaar) */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+/* Product kaart */
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Product titel */
+.product h3 {
+    margin-top: 0;
+}
+
+/* Product afbeelding */
+.product img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Form elementen */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+select,
+input[type="number"] {
+    margin-top: 5px;
+    padding: 5px;
+    width: 80%;
+    max-width: 200px;
+}
+
+/* WhatsApp knop */
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+}
+
+/* Mobiel: 1 product per rij */
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
