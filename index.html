@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Print Your Vision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Print Your Vision</h1>
+    <p>3D geprinte producten op maat</p>
+</header>
+
+<section class="product">
+    <h3>Blikjes opener met deksel</h3>
+    <img src="blikopener.jpg" alt="Blikjes opener met deksel">
+
+    <p>Kies kleur en aantal en bestel via WhatsApp.</p>
+
+    <label for="kleur">Kleur:</label>
+    <select id="kleur">
+        <option>Zwart</option>
+        <option>Wit</option>
+        <option>Grijs</option>
+        <option>Rood</option>
+        <option>Groen</option>
+        <option>Blauw</option>
+        <option>Licht roze</option>
+        <option>Oranje</option>
+    </select>
+
+    <br><br>
+
+    <label for="aantal">Aantal:</label>
+    <input type="number" id="aantal" value="1" min="1">
+
+    <br><br>
+
+   <button class="whatsapp-btn" onclick="bestelProduct('Blikjes opener met deksel', this)">
+    Bestel via WhatsApp
+</button>
+</section>
+<section class="product">
+    <h3>peper en zout kamado bbq</h3>
+    <img src="bbqpeperenzout.jpg" alt="peper en zout kamado bbq">
+
+    <p>Kies kleur en aantal en bestel via WhatsApp.</p>
+
+    <label for="kleur">Kleur:</label>
+    <select id="kleur">
+        <option>Zwart</option>
+        <option>Wit</option>
+        <option>Grijs</option>
+        <option>Rood</option>
+        <option>Groen</option>
+        <option>Blauw</option>
+        <option>Licht roze</option>
+        <option>Oranje</option>
+    </select>
+
+    <br><br>
+
+    <label for="aantal">Aantal:</label>
+    <input type="number" id="aantal" value="1" min="1">
+
+    <br><br>
+
+    <button class="whatsapp-btn" onclick="bestelProduct('peper en zout kamado bbq', this)">
+        Bestel via WhatsApp
+    </button>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
